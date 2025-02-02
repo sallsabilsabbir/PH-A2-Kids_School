@@ -72,16 +72,18 @@
 /* nav for mobile */
 
 @media screen and (max-width: 576px) {
+  .navContainer * {
+    margin: 0;
+    padding: 0px 10px;
+  }
   .navContainer {
     width: 100%;
     height: 70px;
-    padding: 20px 0px;
     border-bottom: 2px solid #FEA301;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .logoText,
   .navDiv-2,
   .navDiv-3 {
