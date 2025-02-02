@@ -37,10 +37,12 @@
   background-color: #000000;
 }
 
-
+body,header{
+  width: 1440px;
+}
 /* nav section */
 .navContainer{
-    width: 1440px;
+    width: 1160px;
     height: 102px;
     padding: 20px 0px;
     display: flex;
@@ -51,7 +53,7 @@
   display: flex;
   font-size: 20px;
   font-weight: bold;
-  gap: 20px;
+  gap: 34px;
 }
 .navMenu li{
  list-style: none;
@@ -65,13 +67,60 @@
   font-weight: 600;
   
 }
+.navDiv-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .navDiv-4{
   display: none;
 }
 
-/* nav for mobile */
+
+
+/* hero section */
+
+.heroContainer{
+  width: 1158px;
+  height: 575px;
+  display: grid;
+  grid-template-columns: auto 468px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+.heroTitle{
+  font-weight: 700;
+  font-size: 44px;
+  
+}
+
+.heroSubtext{
+  font-size: 17px;
+  padding: 20px 0px;
+}
+.enrollBtn{
+  color:white;
+  font-size: 20px;
+  font-weight: 700;
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+
+}
+
+.heroImage{
+  width: 468px;
+  height: 575px;
+}
+
+/* for mobile */
 
 @media screen and (max-width: 576px) {
+
+  /* for nav */
   .navContainer * {
     margin: 0;
     padding: 0px 10px;
@@ -98,6 +147,9 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-  }
+  } 
+}
 
+@media screen and (max-width: 576px) {
+  
 }
