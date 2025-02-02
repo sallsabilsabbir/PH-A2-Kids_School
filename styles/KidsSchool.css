@@ -12,9 +12,90 @@
   padding: 0;
 
 }
+.orangeText{
+  color:#FEA301;
+}
+.blueText{
+  color:#01ACFD;
+}
+.skyblueText{
+  color: #05D4DF;
+}
+.purpleText{
+  color: #5D58EF;
+}
+.bgOrange{
+  background-color: #FEA301;
+}
+.bgYellowGreen{
+  background-color: #95B226;
+}
+.bgSkyBlue{
+  background-color: #05D4DF;
+}
+.bgBlack{
+  background-color: #000000;
+}
+
+
+/* nav section */
 .navContainer{
     width: 1440px;
     height: 102px;
+    padding: 20px 0px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.
+.navMenu{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  gap: 20px;
+}
+.navMenu li{
+ list-style: none;
+}
+.contact{
+  width: 197px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  
+}
+.navDiv-4{
+  display: none;
+}
+
+/* nav for mobile */
+
+@media screen and (max-width: 576px) {
+  .navContainer {
+    width: 100%;
+    height: 70px;
+    padding: 20px 0px;
+    border-bottom: 2px solid #FEA301;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoText,
+  .navDiv-2,
+  .navDiv-3 {
+    display: none;
+  }
+
+  .navDiv-4 {
+    display: block; 
+  }
+
+  .menuIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+}
